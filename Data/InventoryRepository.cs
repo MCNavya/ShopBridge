@@ -15,8 +15,6 @@ namespace ShopBridge.Data
         {
             try
             {
-                // Only return success if at least one row was changed
-
                 return (await _context.SaveChangesAsync()) > 0;
             }
             catch(Exception)

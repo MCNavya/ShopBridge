@@ -13,7 +13,7 @@ namespace ShopBridge.Controllers
     [RoutePrefix("api/Inventory")]
     public class InventoryController : ApiController
     {
-        readonly IInventoryRepository _repository; // = new InventoryRepository();
+        readonly IInventoryRepository _repository;
 
         public InventoryController() {
             _repository = new InventoryRepository();
